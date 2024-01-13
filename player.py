@@ -1,7 +1,6 @@
 import os
 import sys
 import pygame
-from random import choice as ch
 from icecream import ic
 
 
@@ -15,38 +14,105 @@ def load_image(name, colorkey=None):
 
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, group, width, height, floor):
+    def __init__(self, group, width, height, floor, wall1, wall2, roof):
         super().__init__(group)
         self.image = load_image('stand_pos_1.png')
         self.rect = self.image.get_rect()
-        self.rect.center = (width // 2, height // 2)
+        self.rect.x, self.rect.y = (width // 2 - 200, height - 161)
         self.speed = 8
         self.last_key = 'right'
-        self.slow_speed = 1
+        self.slow_speed = 4
         self.jumping = 0
         self.image_cf = 0
         self.image_cs = 0
         self.image_cr = 0
+        self.image_cd = 0
+        self.image_cg = 0
         self.land = 0
         self.flipped = 0
         self.floor = floor
+        self.wall1 = wall1
+        self.wall2 = wall2
+        self.roof = roof
+        self.dance = False
+        self.standp = False
 
     def change_image_falling(self):
         match self.image_cf:
             case 0:
                 self.image = load_image('fall_1.png')
-            case 1:
-                self.image = load_image('fall_2.png')
+                if self.flipped:
+                    self.image = pygame.transform.flip(self.image, True, False)
             case 2:
+                self.image = load_image('fall_2.png')
+                if self.flipped:
+                    self.image = pygame.transform.flip(self.image, True, False)
+            case 6:
                 self.image = load_image('fall_3.png')
                 self.image_cf = -1
-            case 3:
+                if self.flipped:
+                    self.image = pygame.transform.flip(self.image, True, False)
+            case 10:
                 self.image = load_image('stand_pos_1.png')
                 self.image_cf = -1
-                self.land = 1
+                if self.flipped:
+                    self.image = pygame.transform.flip(self.image, True, False)
         self.image_cf += 1
-        if self.flipped:
-            self.image = pygame.transform.flip(self.image, True, False)
+
+    def change_image_standup(self):
+        match self.image_cg:
+            case 0:
+                self.image = load_image('stand_up_10.png')
+            case 10:
+                self.image = load_image('stand_up_20.png')
+            case 20:
+                self.image = load_image('stand_up_30.png')
+            case 30:
+                self.image = load_image('stand_up_40.png')
+            case 40:
+                self.image = load_image('stand_up_50.png')
+            case 50:
+                self.image = load_image('stand_up_60.png')
+            case 60:
+                self.image = load_image('stand_up_70.png')
+            case 70:
+                self.image = load_image('stand_up_80.png')
+            case 80:
+                self.image = load_image('stand_up_90.png')
+        self.image_cg += 1
+        if self.image_cg == 100:
+            self.image = load_image('stand_pos_1.png')
+            self.rect.x, self.rect.y = (1920 // 2 - 100, 1080 - 130)
+            self.standp = True
+
+    def change_image_dance(self):
+        match self.image_cd:
+            case 0:
+                self.image = load_image('dance_1.png')
+            case 10:
+                self.image = load_image('dance_2.png')
+            case 20:
+                self.image = load_image('dance_3.png')
+            case 30:
+                self.image = load_image('dance_4.png')
+            case 40:
+                self.image = load_image('dance_5.png')
+            case 50:
+                self.image = load_image('dance_6.png')
+            case 60:
+                self.image = load_image('dance_7.png')
+            case 70:
+                self.image = load_image('dance_8.png')
+            case 80:
+                self.image = load_image('dance_9.png')
+            case 90:
+                self.image = load_image('dance_10.png')
+            case 100:
+                self.image = load_image('dance_11.png')
+            case 110:
+                self.image = load_image('dance_12.png')
+                self.image_cd = -1
+        self.image_cd += 1
 
     def change_image_running(self):
         match self.image_cr:
@@ -144,31 +210,40 @@ class Player(pygame.sprite.Sprite):
         self.image_cs += 1
         self.image_cr = 0
 
+    def change_image_attack(self):
+        pass
+
     def update(self):
         keys = pygame.key.get_pressed()
         if keys[pygame.K_LSHIFT] or keys[pygame.K_RSHIFT]:
+            self.dance = False
             current_speed = self.slow_speed
         else:
             current_speed = self.speed
         if keys[pygame.K_a]:  # LEFT
+            self.dance = False
             self.image_cf = 0
             if self.last_key == 'right':
                 self.flipped = 1
             self.last_key = 'left'
-            self.rect.x -= current_speed
+            if not pygame.sprite.spritecollideany(self, self.wall1):
+                self.rect.x -= current_speed
             self.image_cs = 0
             if self.land:
                 self.change_image_running()
         if keys[pygame.K_d]:  # RIGHT
             self.image_cf = 0
+            self.dance = False
             if self.last_key == 'left':
                 self.flipped = 0
             self.last_key = 'right'
-            self.rect.x += current_speed
+            if not pygame.sprite.spritecollideany(self, self.wall2):
+                self.rect.x += current_speed
             self.image_cs = 0
             if self.land:
                 self.change_image_running()
         if keys[pygame.K_SPACE]:
+            self.dance = False
             if self.jumping == 0 and pygame.sprite.spritecollideany(self, self.floor):
                 self.land = 0
                 self.jumping = 300

@@ -6,8 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6c2e0482-5f4b-4c65-b8d3-70846b20f434" name="Changes" comment="0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stand_up_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,27 +30,27 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2as0Oq7nXWGchHndqcMp8wUYyDG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/xemon/PycharmProjects/Gravity-Sword"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xemon/PycharmProjects/Gravity-Sword&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Gravity-Sword" />
@@ -124,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705125703027</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0">
+      <option name="closed" value="true" />
+      <created>1705126523554</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705126523554</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
