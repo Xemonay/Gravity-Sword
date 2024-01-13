@@ -34,33 +34,24 @@ while go:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             go = False
-    if not player.landing:
-        if not any(pygame.key.get_pressed()):
-            player.change_image_standing()
-        if player.jumping > 0:
-            player.rect = player.rect.move(0, -10)
-            player.jumping -= 10
-            fall_speed = 0
-        elif not pygame.sprite.spritecollideany(player, floor):
-            if frame_count % gravity_interval == 0:
-                fall_speed += gravity
-                player.change_image_falling()
-            player.rect = player.rect.move(0, fall_speed)
-        if pygame.sprite.spritecollideany(player, floor):
-            if player.land == 0:
-                player.image_cf = 3
-                if player.fall_t >= 100000:
-                    player.change_image_landing()
-                    player.landing = True
-                player.fall_t = 0
-                player.change_image_falling()
-    else:
-        player.change_image_landing()
-        if player.image_cl >= 21:
-            player.image_cl = 0
-            player.landing = False
+    if not any(pygame.key.get_pressed()):
+        player.change_image_standing()
+    if player.jumping > 0:
+        player.rect = player.rect.move(0, -10)
+        player.jumping -= 10
+        fall_speed = 0
+    elif not pygame.sprite.spritecollideany(player, floor):
+        if frame_count % gravity_interval == 0:
+            fall_speed += gravity
+            player.change_image_falling()
+        player.rect = player.rect.move(0, fall_speed)
+    if pygame.sprite.spritecollideany(player, floor):
+        if player.land == 0:
+            player.image_cf = 3
+            player.change_image_falling()
     all_sprites.update()
     screen.fill('WHITE')
+    floor.draw(floor_surface)
     screen.blit(floor_surface, (0, 0))
     all_sprites.draw(screen)
     pygame.display.flip()

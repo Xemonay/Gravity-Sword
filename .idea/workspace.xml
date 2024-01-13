@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c2e0482-5f4b-4c65-b8d3-70846b20f434" name="Changes" comment="0">
-      <change beforePath="$PROJECT_DIR$/data/attacks.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/frame_1_delay-0.1s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/frame_2_delay-0.1s.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/frame_3_delay-0.1s.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/player1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/player_dances.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/player_run.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stands_up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
     </list>
@@ -123,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705092133305</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="0">
+      <option name="closed" value="true" />
+      <created>1705125703027</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705125703027</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,16 +141,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0" />
     <option name="LAST_COMMIT_MESSAGE" value="0" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

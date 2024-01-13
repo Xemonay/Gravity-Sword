@@ -27,52 +27,26 @@ class Player(pygame.sprite.Sprite):
         self.image_cf = 0
         self.image_cs = 0
         self.image_cr = 0
-        self.image_cl = 0
         self.land = 0
         self.flipped = 0
         self.floor = floor
-        self.landing = False
-        self.fall_t = 0
 
     def change_image_falling(self):
         match self.image_cf:
             case 0:
                 self.image = load_image('fall_1.png')
-                if self.flipped:
-                    self.image = pygame.transform.flip(self.image, True, False)
-            case 10:
+            case 1:
                 self.image = load_image('fall_2.png')
-                if self.flipped:
-                    self.image = pygame.transform.flip(self.image, True, False)
-            case 20:
+            case 2:
                 self.image = load_image('fall_3.png')
                 self.image_cf = -1
-                if self.flipped:
-                    self.image = pygame.transform.flip(self.image, True, False)
-            case 30:
+            case 3:
                 self.image = load_image('stand_pos_1.png')
                 self.image_cf = -1
                 self.land = 1
-                if self.flipped:
-                    self.image = pygame.transform.flip(self.image, True, False)
         self.image_cf += 1
-        self.fall_t += 1
-
-    def change_image_landing(self):
-        match self.image_cl:
-            case 0:
-                self.image = load_image('stand_up_7.png')
-                if self.flipped:
-                    self.image = pygame.transform.flip(self.image, True, False)
-            case 10:
-                self.image = load_image('stand_up_8.png')
-                if self.flipped:
-                    self.image = pygame.transform.flip(self.image, True, False)
-            case 20:
-                self.image = load_image('stand_up_8.png')
-                if self.flipped:
-                    self.image = pygame.transform.flip(self.image, True, False)
-        self.image_cl += 1
+        if self.flipped:
+            self.image = pygame.transform.flip(self.image, True, False)
 
     def change_image_running(self):
         match self.image_cr:
@@ -185,7 +159,7 @@ class Player(pygame.sprite.Sprite):
             self.image_cs = 0
             if self.land:
                 self.change_image_running()
-        elif keys[pygame.K_d]:  # RIGHT
+        if keys[pygame.K_d]:  # RIGHT
             self.image_cf = 0
             if self.last_key == 'left':
                 self.flipped = 0
@@ -194,7 +168,7 @@ class Player(pygame.sprite.Sprite):
             self.image_cs = 0
             if self.land:
                 self.change_image_running()
-        elif keys[pygame.K_SPACE]:
+        if keys[pygame.K_SPACE]:
             if self.jumping == 0 and pygame.sprite.spritecollideany(self, self.floor):
                 self.land = 0
                 self.jumping = 300
