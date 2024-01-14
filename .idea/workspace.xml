@@ -6,15 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6c2e0482-5f4b-4c65-b8d3-70846b20f434" name="Changes" comment="0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stand_up_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/stand_up_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/1_attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/1_attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2_attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/2_attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/3_attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/3_attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/4_attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/4_attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/5_attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/5_attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/6_attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/6_attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/7_attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/7_attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/ball.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/logo1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
@@ -23,6 +23,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,7 +58,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/xemon/PycharmProjects/Gravity-Sword&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.test">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Gravity-Sword" />
       <option name="ENV_FILES" value="" />
@@ -142,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705126523554</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0">
+      <option name="closed" value="true" />
+      <created>1705174564962</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705174564962</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
