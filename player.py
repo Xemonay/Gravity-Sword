@@ -2,7 +2,6 @@ import os
 import sys
 
 import pygame
-from icecream import ic
 
 
 def load_image(name, colorkey=None):
@@ -48,16 +47,16 @@ class Player(pygame.sprite.Sprite):
             case 0:
                 self.image = load_image('fall_1.png')
                 self.image = pygame.transform.flip(self.image, True if self.flipped else False,
-                                                       False if self.gravity == 1 else True)
+                                                   False if self.gravity == 1 else True)
             case 2:
                 self.image = load_image('fall_2.png')
                 self.image = pygame.transform.flip(self.image, True if self.flipped else False,
-                                                       False if self.gravity == 1 else True)
+                                                   False if self.gravity == 1 else True)
             case 6:
                 self.image = load_image('fall_3.png')
                 self.image_cf = -1
                 self.image = pygame.transform.flip(self.image, True if self.flipped else False,
-                                                       False if self.gravity == 1 else True)
+                                                   False if self.gravity == 1 else True)
             case 10:
                 self.image = load_image('stand_pos_1.png')
                 self.image_cf = -1
